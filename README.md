@@ -10,7 +10,7 @@
 
 ![Example Image](doc/자판기용사_기능명세서.png)
 
-### 모델 설계서
+### 모델 설계
 
 ![Example Image](doc/모델_설계도.png)
 
