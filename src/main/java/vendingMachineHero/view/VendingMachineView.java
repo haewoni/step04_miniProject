@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import vendingMachineHero.controller.HeroController;
+import vendingMachineHero.controller.VendingMachineController;
 import vendingMachineHero.model.Beverage;
 import vendingMachineHero.model.Hero;
 
@@ -31,6 +32,7 @@ public class VendingMachineView {
 				if (choice != 0) {
 					switch (choice) {
 						case 1:
+							pickUpBeverage();
 							break;
 						case 2:
 							printHeroStat();
@@ -58,7 +60,8 @@ public class VendingMachineView {
 	}
 
 	private void pickUpBeverage() {
-
+		Beverage beverage = VendingMachineController.getInstance().getOneBeverage();
+		System.out.println("[" + beverage.getName() + "] 을(를) 뽑았습니다.");
 	}
 
 	private void printHeroStat() {
