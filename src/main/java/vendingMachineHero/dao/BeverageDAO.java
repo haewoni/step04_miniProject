@@ -9,7 +9,7 @@ public class BeverageDAO {
 
 	public static BeverageDAO instance = new BeverageDAO();
 
-	private BeverageDAO beverage = new BeverageDAO();
+	// private BeverageDAO beverage = new BeverageDAO();
 
 	private BeverageDAO() {
 	}
@@ -49,9 +49,8 @@ public class BeverageDAO {
 	 * 2. 음료 되팔기 (사용자)
 	 * 
 	 * @return 되판 음료 객체 or 사용자 남은 음료 리스트
-	 	*/
+	 */
 
-	
 	public Beverage getBeverage(int index) {
 		if (index >= 0 && index < p.size()) {
 			return p.get(index);
@@ -60,9 +59,7 @@ public class BeverageDAO {
 		}
 	}
 
-	
 	public int getSize() {
 		return p.size();
 	}
-
 }

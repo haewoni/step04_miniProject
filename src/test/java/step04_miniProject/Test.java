@@ -1,18 +1,30 @@
-package step04_miniProject;
+package step04_miniproject;
+
+import java.util.ArrayList;
 
 import vendingMachineHero.admin.dao.UserDAO;
+import vendingMachineHero.model.User;
 
 public class Test {
 
 	@org.junit.Test
 	public void t1() {
 		UserDAO u = new UserDAO();
-		u.saveUser("dffdg");
-		System.out.println(u.getUser("dffdg"));;
-		u.getUser("dff22dg");
-		u.showUsers();
-		u.deleteUser("dffdg");
-		u.showUsers();
+		u.saveUser("1");
+		u.saveUser("2");
+		u.saveUser("3");
+		ArrayList<User> soo = u.showUsers();
+		for (User i : soo) {
+			System.out.println(i.getUsername());
+		}
+
+		System.out.println(u.getUser("1").getUsername());
+		;
+		u.deleteUser("2");
+		ArrayList<User> soo1 = u.showUsers();
+		for (User i : soo1) {
+			System.out.println(i.getUsername());
+		}
 
 	}
 }

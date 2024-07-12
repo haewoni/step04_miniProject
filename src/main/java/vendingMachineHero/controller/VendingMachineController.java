@@ -1,21 +1,23 @@
 package vendingMachineHero.controller;
 
+import vendingMachineHero.service.BeverageService;
 import vendingMachineHero.service.VendingMachineService;
 import vendingMachineHero.model.Beverage;
 import java.util.Scanner;
 
-public class VendingMachineController{
-	
+public class VendingMachineController {
+
 	private static VendingMachineController instance = new VendingMachineController();
 	private static VendingMachineService service = VendingMachineService.getInstance();
 	private Scanner scanner = new Scanner(System.in);
-	
-	private VendingMachineController() {}
+
+	private VendingMachineController() {
+	}
 
 	public static VendingMachineController getInstance() {
 		return instance;
 	}
-	
+
 	/*
 	 * 음료 검색 (리스트 출력)
 	 */
@@ -23,7 +25,7 @@ public class VendingMachineController{
 		System.out.println("음료 리스트를 출력합니다.");
 		service.listBeverages();
 	}
-	
+
 	/*
 	 * 음료 추가 및 수정
 	 * 
@@ -55,13 +57,19 @@ public class VendingMachineController{
 		}
 	}
 	
+
 	/*
-	 * 음료 삭제 
+	 * 음료 삭제
 	 * 
 	 */
 	public void deleteBeverage() {
 		System.out.println("삭제할 음료를 입력해 주세요. : ");
 		String name = scanner.nextLine();
 		service.deleteBeverage(name);
+		}
+
+	public Beverage getOneBeverage() {
+		Beverage beverage = VendingMachineService.getInstance().pickUpBeverage();
+		return beverage;
 	}
 }
