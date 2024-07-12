@@ -15,4 +15,9 @@ public class HeroService {
 	public void addBeverage(Beverage beverage) {
 		HeroDAO.instance.addBeverage(beverage);
 	}
+
+	public void setUsername(String username) {
+		Hero hero = HeroDAO.instance.getHeroInfo();
+		hero.setUsername(username);
+	}
 }

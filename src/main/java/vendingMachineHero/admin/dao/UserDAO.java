@@ -8,10 +8,21 @@ public class UserDAO {
 	public static UserDAO instance = new UserDAO();
 
 	private ArrayList<User> users = new ArrayList<>();
+	private String logginedUser = "";
 
 	// 모든 유저 검색
 	public ArrayList<User> showUsers() {
 		return users;
+	}
+
+	public void registerLoginUser(String username) {
+		this.logginedUser = username;
+
+	}
+
+	public String getLogginedUser() {
+		return this.logginedUser;
+
 	}
 
 	// 특정 유저 검색
