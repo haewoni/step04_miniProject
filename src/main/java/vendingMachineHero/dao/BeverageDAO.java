@@ -51,7 +51,7 @@ public class BeverageDAO {
 	 * @return 되판 음료 객체 or 사용자 남은 음료 리스트
 	 	*/
 
-
+	
 	public Beverage getBeverage(int index) {
 		if (index >= 0 && index < p.size()) {
 			return p.get(index);
