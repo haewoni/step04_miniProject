@@ -16,9 +16,9 @@ public class StartView {
 				System.out.println("*****************************");
 				System.out.println("*      자판기 히어로      *");
 				System.out.println("*****************************");
-				System.out.println("* 1. 로그인                 *");
-				// System.out.println("* 2. 관리자 로그인 *");
-				System.out.println("* 2. 종료                   *");
+				System.out.println("* 1. 로그인                   *");
+				System.out.println("* 2. 관리자 로그인				*");
+				System.out.println("* 2. 종료       				*");
 				System.out.println("*****************************");
 				System.out.print("선택하세요: ");
 
