@@ -11,7 +11,7 @@ public class UserService {
 	private static UserDAO u = new UserDAO();
 
 	
-	private UserService() {}
+	public UserService() {}
 	
 	public static UserService getService() {
 		return instance;
