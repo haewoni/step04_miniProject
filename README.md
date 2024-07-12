@@ -2,7 +2,6 @@
 
 자판기 음료를 뽑아서 히어로를 키우는 게임 프로그램
 
-
 ![Example Image](doc/게임_화면.png)
 
 # 문서
@@ -13,7 +12,7 @@
 
 ### 모델 설계서
 
-![Example Image](doc/화면_설계도.png)
+![Example Image](doc/모델_설계도.png)
 
 # 설치
 
