@@ -21,7 +21,8 @@ public class StartView {
 				System.out.println("* 2. 종료       				*");
 				System.out.println("*****************************");
 				System.out.print("선택하세요: ");
-
+				
+				//주석추가
 				// 사용자 입력 받기
 				String choiceStr = reader.readLine();
 				int choice = Integer.parseInt(choiceStr);

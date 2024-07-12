@@ -6,5 +6,5 @@ public class AdminDAO {
 	
 	public static AdminDAO instance = new AdminDAO();
 	
-
+	
 }
