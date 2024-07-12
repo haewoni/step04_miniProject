@@ -12,6 +12,7 @@ import lombok.Setter;
 @Setter
 public class Beverage {
 	private String name;        
+	private int price;
 	private int strength;       
 	private int agility;
 	private int intelligence;
@@ -21,6 +22,8 @@ public class Beverage {
 		StringBuilder builder = new StringBuilder();
 		builder.append("음료명 : ");
 		builder.append(name);
+		builder.append(", 가격 : ");
+		builder.append(price);
 		builder.append(", 힘 : ");
 		builder.append(strength);
 		builder.append(", 민첩성 : ");
