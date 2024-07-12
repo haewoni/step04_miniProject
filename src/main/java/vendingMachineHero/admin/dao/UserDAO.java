@@ -39,11 +39,12 @@ public class UserDAO {
 			}
 			
 		}
-		
+		//유저 삭제
 		public void deleteUser(String username){
 			User u = getUser(username);
 			if (u != null && users.contains(u)) {
-				System.out.println();
+				System.out.println(username + " 유저를 삭제합니다.");
+				users.remove(u);
 			}
 			
 		}
