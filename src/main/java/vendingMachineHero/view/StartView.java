@@ -33,11 +33,11 @@ public class StartView {
 						// 로그인 로직 추가
 						LoginView.instnace.print();
 						break;
+//					case 2:
+//						System.out.println("관리자 로그인 선택됨");
+//						// 관리자 로그인 로직 추가
+//						break;
 					case 2:
-						System.out.println("관리자 로그인 선택됨");
-						// 관리자 로그인 로직 추가
-						break;
-					case 3:
 						System.out.println("프로그램을 종료합니다.");
 						return; // 프로그램 종료
 					default:
