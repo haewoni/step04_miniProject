@@ -19,7 +19,6 @@ public class Test {
 		}
 
 		System.out.println(u.getUser("1").getUsername());
-		;
 		u.deleteUser("2");
 		ArrayList<User> soo1 = u.showUsers();
 		for (User i : soo1) {
@@ -28,3 +27,10 @@ public class Test {
 
 	}
 }
+
+/*
+ * # 학습 내용
+ * 깃 다루기
+ * mvc패턴
+ * 테스트 코드 작성(선택사항)
+ */

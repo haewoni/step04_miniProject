@@ -15,4 +15,8 @@ public class UserController {
 
 	}
 
+	public String getLogginedUser() {
+		return UserService.getService().getLogginedUser();
+	}
+
 }

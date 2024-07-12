@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import vendingMachineHero.admin.dao.UserDAO;
 import vendingMachineHero.model.User;
+import vendingMachineHero.service.HeroService;
 
 public class UserService {
 
@@ -17,6 +18,10 @@ public class UserService {
 		return instance;
 	}
 
+	public String getLogginedUser() {
+		return u.getLogginedUser();
+	}
+
 	// 로그인
 	public static String loginUser(String username) {
 		User user = u.getUser(username);
@@ -26,6 +31,7 @@ public class UserService {
 			System.out.println("등록되지 않은 사용자입니다. 입력하신 이름으로 신규 가입합니다.");
 			user = u.saveUser(username);
 		}
+		HeroService.instance.setUsername(username);
 		return user.getUsername();
 	}
 

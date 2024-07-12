@@ -45,6 +45,8 @@ public class VendingMachineView {
 					}
 				}
 
+				System.out.print("> ");
+
 				// 사용자 입력 받기
 				String choiceStr = reader.readLine();
 				choice = Integer.parseInt(choiceStr);
