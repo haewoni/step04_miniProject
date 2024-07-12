@@ -6,6 +6,8 @@
 
 ### 기능 명세서
 
+![Example Image](doc/자판기용사_기능명세서.png)
+
 # 설치
 
 mvn install
