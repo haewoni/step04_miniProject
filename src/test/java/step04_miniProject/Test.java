@@ -1,4 +1,4 @@
-package step04_miniProject;
+package step04_miniproject;
 
 import java.util.ArrayList;
 
@@ -14,14 +14,15 @@ public class Test {
 		u.saveUser("2");
 		u.saveUser("3");
 		ArrayList<User> soo = u.showUsers();
-		for(User i : soo) {
+		for (User i : soo) {
 			System.out.println(i.getUsername());
 		}
 
-		System.out.println(u.getUser("1").getUsername());;
+		System.out.println(u.getUser("1").getUsername());
+		;
 		u.deleteUser("2");
 		ArrayList<User> soo1 = u.showUsers();
-		for(User i : soo1) {
+		for (User i : soo1) {
 			System.out.println(i.getUsername());
 		}
 
