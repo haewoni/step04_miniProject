@@ -9,7 +9,7 @@ public class BeverageDAO {
 
 	public static BeverageDAO instance = new BeverageDAO();
 
-	private BeverageDAO beverage = new BeverageDAO();
+	// private BeverageDAO beverage = new BeverageDAO();
 
 	private BeverageDAO() {
 	}

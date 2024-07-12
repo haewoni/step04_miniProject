@@ -14,7 +14,6 @@ public class VendingMachineView {
 	private int choice = 0;
 
 	public void print() {
-
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
 		while (true) {
@@ -77,8 +76,9 @@ public class VendingMachineView {
 		System.out.println("*      뽑은 음료들     *");
 		System.out.println("*****************************");
 		for (Beverage item : hero.getItems()) {
-			System.out.println(
-					item.getName() + " " + item.getStrength() + " " + item.getAgility() + " " + item.getIntelligence());
+			// 이름을 먼저 출력하고 오른쪽에 힘: +~~, 민첩: +~~, 지능: +~~ 출력
+			System.out.println("* " + item.getName() + " 힘: +" + item.getStrength() + ", 민첩: +" + item.getAgility()
+					+ ", 지능: +" + item.getIntelligence());
 		}
 	}
 }

@@ -10,8 +10,9 @@ public class UserService {
 	private static UserService instance = new UserService();
 	private static UserDAO u = new UserDAO();
 
-	public UserService() {}
-	
+	public UserService() {
+	}
+
 	public static UserService getService() {
 		return instance;
 	}
@@ -23,7 +24,7 @@ public class UserService {
 			System.out.println("환영합니다.");
 		} else {
 			System.out.println("등록되지 않은 사용자입니다. 입력하신 이름으로 신규 가입합니다.");
-			u.saveUser(username);
+			user = u.saveUser(username);
 		}
 		return user.getUsername();
 	}
