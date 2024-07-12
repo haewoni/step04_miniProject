@@ -8,5 +8,5 @@ public class VendingMachineService {
 //	
 //	public static VendingMachineService() {}
 //	
-	
+	//아무거나
 }
