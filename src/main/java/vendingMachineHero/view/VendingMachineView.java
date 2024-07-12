@@ -21,11 +21,11 @@ public class VendingMachineView {
 				util.Terminal.clearScreen();
 
 				System.out.println("*****************************");
-				System.out.println("*      자판기 뽑기     *");
+				System.out.println("*          자판기 뽑기			*");
 				System.out.println("*****************************");
-				System.out.println("* 1. 자판기 뽑기                 *");
-				System.out.println("* 2. 히어로 스탯          *");
-				System.out.println("* 3. 종료                   *");
+				System.out.println("* 1. 자판기 뽑기               *");
+				System.out.println("* 2. 히어로 스탯          		*");
+				System.out.println("* 3. 종료                   	*");
 				System.out.println("*****************************");
 
 				if (choice != 0) {
